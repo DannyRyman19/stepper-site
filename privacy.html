@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Stepper</title>
+  <style>
+    :root {
+      --blue: #007AFF;
+      --indigo: #5856D6;
+      --bg: #0A0A0F;
+      --surface: #141420;
+      --border: rgba(255,255,255,0.08);
+      --text: #F2F2F7;
+      --muted: #8E8E93;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 max(24px, 5vw); height: 60px;
+      background: rgba(10,10,15,0.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-size: 1.1rem; font-weight: 700; letter-spacing: -0.3px;
+      background: linear-gradient(135deg, var(--blue), var(--indigo));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+    .nav-links a:hover { color: var(--text); }
+    .prose {
+      max-width: 720px; margin: 0 auto;
+      padding: 60px max(24px, 5vw) 100px;
+    }
+    .prose .eyebrow {
+      font-size: 0.8rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--blue); margin-bottom: 12px;
+    }
+    .prose h1 {
+      font-size: clamp(2rem, 5vw, 3rem); font-weight: 800;
+      letter-spacing: -1px; margin-bottom: 8px;
+    }
+    .prose .meta {
+      color: var(--muted); font-size: 0.9rem; margin-bottom: 48px;
+    }
+    .prose h2 {
+      font-size: 1.25rem; font-weight: 700;
+      margin-top: 44px; margin-bottom: 12px;
+      padding-top: 44px; border-top: 1px solid var(--border);
+    }
+    .prose h3 { font-size: 1rem; font-weight: 700; margin-top: 24px; margin-bottom: 8px; }
+    .prose p { color: #C7C7CC; margin-bottom: 16px; }
+    .prose strong { color: var(--text); }
+    .prose a { color: var(--blue); text-decoration: none; }
+    .prose a:hover { text-decoration: underline; }
+    .prose ul, .prose ol { padding-left: 22px; margin-bottom: 16px; }
+    .prose li { color: #C7C7CC; margin-bottom: 6px; }
+    .prose table {
+      width: 100%; border-collapse: collapse;
+      margin: 20px 0 28px; font-size: 0.9rem;
+    }
+    .prose th {
+      text-align: left; padding: 10px 14px;
+      background: var(--surface); color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+    }
+    .prose td {
+      padding: 10px 14px; color: #C7C7CC;
+      border-bottom: 1px solid var(--border);
+    }
+    .prose tr:last-child td { border-bottom: none; }
+    .prose table { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+    footer {
+      padding: 40px max(24px, 5vw); display: flex; flex-direction: column;
+      align-items: center; gap: 16px; text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    .footer-links { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.875rem; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Stepper</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+  </ul>
+</nav>
+
+<div class="prose">
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">App: Stepper &nbsp;·&nbsp; Developer: Daniel Ryman &nbsp;·&nbsp; Last updated: February 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>This Privacy Policy explains what data Stepper collects, how it is used, and your rights. By using Stepper you agree to this policy.</p>
+  <p>This policy covers users worldwide, including those protected by the UK GDPR, EU GDPR, and the California Consumer Privacy Act (CCPA).</p>
+
+  <h2>2. Data We Collect</h2>
+
+  <h3>2.1 Health &amp; Fitness Data (HealthKit)</h3>
+  <p>Stepper reads the following data from Apple HealthKit with your explicit permission:</p>
+  <ul>
+    <li>Step count and daily step history</li>
+    <li>Walking and running distance</li>
+    <li>Workout sessions (walking, running, hiking) including duration, distance, route, heart rate, and calories</li>
+    <li>Active energy burned, exercise minutes, and stand hours (activity rings)</li>
+    <li>Weight entries</li>
+    <li>Cardio fitness (VO2 max)</li>
+  </ul>
+  <p><strong>This data never leaves your device except as described in section 3.</strong> It is not sold or shared with advertisers.</p>
+
+  <h3>2.2 Account Information</h3>
+  <p>If you choose to sign in with Apple:</p>
+  <ul>
+    <li>Your display name (as provided by Apple)</li>
+    <li>A unique user identifier (anonymised by Apple)</li>
+    <li>Profile photo (if you add one within the app)</li>
+  </ul>
+  <p>Sign-in is optional. Most features work without an account.</p>
+
+  <h3>2.3 Social &amp; Activity Data</h3>
+  <p>If you use the Friends and Challenges features, the following is stored on our servers:</p>
+  <ul>
+    <li>Your display name and profile photo</li>
+    <li>Step counts synced daily for the friends leaderboard</li>
+    <li>Friend connections (who you are friends with)</li>
+    <li>Friend challenge records (goal, start/end dates, progress)</li>
+  </ul>
+
+  <h3>2.4 Location Data</h3>
+  <p>Stepper accesses your location only in the following cases:</p>
+  <ul>
+    <li><strong>Territory feature:</strong> your GPS route while the recording screen is active, to colour in map tiles</li>
+    <li><strong>Workout routes:</strong> GPS data recorded during tracked workouts (stored in HealthKit)</li>
+    <li><strong>Challenge map picker:</strong> one-time reverse geocoding to name a destination</li>
+  </ul>
+  <p>Location is not tracked in the background except during an active workout or territory recording session.</p>
+
+  <h3>2.5 Screen Time Data (Focus Mode)</h3>
+  <p>The Focus Mode feature uses Apple's FamilyControls framework. App selections made in Focus Mode are stored using opaque system tokens and never leave your device. Stepper cannot read which specific apps you have selected — only the iOS system can interpret those tokens. No app selection data is sent to our servers.</p>
+
+  <h3>2.6 Push Notification Token</h3>
+  <p>If you grant notification permission, your APNs device token is stored on our servers solely to deliver social notifications (friend requests, challenge updates). It is never used for marketing.</p>
+
+  <h3>2.7 Diagnostics &amp; Crash Reports (Sentry)</h3>
+  <p>Stepper uses Sentry for crash reporting and stability monitoring. This may include:</p>
+  <ul>
+    <li>Crash stack traces</li>
+    <li>Anonymous breadcrumb events (e.g. "workout started", "goal changed") — <strong>no health values are included</strong></li>
+    <li>Device type and iOS version</li>
+  </ul>
+  <p>Sentry data is processed by Functional Software, Inc. under their <a href="https://sentry.io/privacy/">Privacy Policy</a>.</p>
+
+  <h3>2.8 Purchase Information (RevenueCat)</h3>
+  <p>Stepper uses RevenueCat to manage the Stepper Pro subscription. RevenueCat receives:</p>
+  <ul>
+    <li>A pseudonymous user identifier</li>
+    <li>Purchase and subscription status (from the App Store receipt)</li>
+  </ul>
+  <p>RevenueCat does not receive your name, email, or health data. See their <a href="https://www.revenuecat.com/privacy/">Privacy Policy</a>.</p>
+
+  <h2>3. How We Use Your Data</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>HealthKit data</td><td>Display your stats, streaks, achievements, and widget</td></tr>
+      <tr><td>Account info</td><td>Identify you on the social leaderboard</td></tr>
+      <tr><td>Social data</td><td>Friends list, challenges, leaderboard</td></tr>
+      <tr><td>Location</td><td>Territory map, workout route display</td></tr>
+      <tr><td>Push token</td><td>Deliver social and reminder notifications</td></tr>
+      <tr><td>Diagnostics</td><td>Fix crashes and improve stability</td></tr>
+      <tr><td>Purchase info</td><td>Unlock Stepper Pro features</td></tr>
+    </tbody>
+  </table>
+  <p>We do not use your data for advertising, profiling, or any purpose beyond operating the app.</p>
+
+  <h2>4. Data Storage &amp; Security</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Stored</th></tr></thead>
+    <tbody>
+      <tr><td>HealthKit data</td><td>On your device (Apple's HealthKit store)</td></tr>
+      <tr><td>Screen Time / Focus Mode selections</td><td>On your device only</td></tr>
+      <tr><td>Social data, push tokens</td><td>Supabase (EU region)</td></tr>
+      <tr><td>Crash reports</td><td>Sentry (EU region)</td></tr>
+      <tr><td>Purchase status</td><td>RevenueCat (United States)</td></tr>
+      <tr><td>App settings, streak, goals</td><td>On your device (UserDefaults)</td></tr>
+    </tbody>
+  </table>
+  <p>All server communication uses TLS. Supabase enforces Row Level Security so users can only access their own data and data shared with friends.</p>
+
+  <h2>5. International Data Transfers</h2>
+  <p>Some of our third-party processors are based outside your country. Where personal data is transferred internationally, we rely on appropriate safeguards:</p>
+  <ul>
+    <li><strong>Supabase</strong> — data stored in the EU; subject to EU GDPR adequacy provisions</li>
+    <li><strong>RevenueCat</strong> — based in the United States; transfers covered by Standard Contractual Clauses (SCCs)</li>
+    <li><strong>Sentry</strong> — data stored in the EU; subject to EU GDPR adequacy provisions</li>
+  </ul>
+
+  <h2>6. Third-Party Services</h2>
+  <table>
+    <thead><tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr></thead>
+    <tbody>
+      <tr><td>Apple HealthKit</td><td>Health data</td><td><a href="https://www.apple.com/privacy/">apple.com/privacy</a></td></tr>
+      <tr><td>Apple Sign In</td><td>Authentication</td><td><a href="https://www.apple.com/privacy/">apple.com/privacy</a></td></tr>
+      <tr><td>Apple Screen Time</td><td>Focus Mode app blocking</td><td><a href="https://www.apple.com/privacy/">apple.com/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>Social features backend</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Sentry</td><td>Crash reporting</td><td><a href="https://sentry.io/privacy/">sentry.io/privacy</a></td></tr>
+    </tbody>
+  </table>
+
+  <h2>7. Data Retention</h2>
+  <ul>
+    <li><strong>Social profile &amp; activity data:</strong> retained while your account is active. You can delete your account at any time from Settings → Account → Delete Account, which permanently removes all social data from our servers.</li>
+    <li><strong>Push tokens:</strong> deleted when you delete your account or sign out.</li>
+    <li><strong>Crash reports:</strong> retained by Sentry for 90 days.</li>
+    <li><strong>HealthKit data:</strong> managed entirely by Apple on your device.</li>
+  </ul>
+
+  <h2>8. Your Rights</h2>
+
+  <h3>UK &amp; EU Users (UK GDPR / EU GDPR)</h3>
+  <p>You have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> the personal data we hold about you</li>
+    <li><strong>Rectification</strong> of inaccurate data</li>
+    <li><strong>Erasure</strong> ("right to be forgotten") — delete your account in Settings</li>
+    <li><strong>Restriction</strong> of processing</li>
+    <li><strong>Data portability</strong></li>
+    <li><strong>Object</strong> to processing</li>
+  </ul>
+  <p>To exercise these rights, email <a href="mailto:rymandanny@gmail.com">rymandanny@gmail.com</a>. We will respond within 30 days.</p>
+  <p>UK users may lodge a complaint with the <strong>Information Commissioner's Office (ICO)</strong>: <a href="https://ico.org.uk">ico.org.uk</a>.</p>
+  <p>EU users may lodge a complaint with your local <strong>Data Protection Authority (DPA)</strong>.</p>
+
+  <h3>California Users (CCPA)</h3>
+  <p>California residents have the right to:</p>
+  <ul>
+    <li><strong>Know</strong> what personal information is collected and how it is used</li>
+    <li><strong>Delete</strong> personal information we hold about you</li>
+    <li><strong>Opt out of the sale</strong> of personal information — we do not sell personal information to third parties</li>
+    <li><strong>Non-discrimination</strong> for exercising your privacy rights</li>
+  </ul>
+  <p>To make a CCPA request, email <a href="mailto:rymandanny@gmail.com">rymandanny@gmail.com</a> with the subject line "CCPA Request". We will respond within 45 days.</p>
+
+  <h2>9. Children's Privacy</h2>
+  <p>Stepper is not directed at children. The minimum age to use the social features is <strong>13</strong> (or 16 in countries where EU GDPR applies a higher age of digital consent). We do not knowingly collect personal data from children below the applicable age. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this policy from time to time. We will notify you of significant changes via an in-app notice. Continued use of the app after changes constitutes acceptance.</p>
+
+  <h2>11. Contact</h2>
+  <p><strong>Daniel Ryman</strong><br />
+  Email: <a href="mailto:rymandanny@gmail.com">rymandanny@gmail.com</a></p>
+</div>
+
+<footer>
+  <nav class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="mailto:rymandanny@gmail.com">Contact</a>
+  </nav>
+  <p class="footer-copy">© 2026 Daniel Ryman. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
