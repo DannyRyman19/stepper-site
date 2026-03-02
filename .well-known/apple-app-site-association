@@ -2,7 +2,7 @@
     "applinks": {
         "details": [
             {
-                "appIDs": ["44G72CWWEW.com.DannyRyman.Stepper"],
+                "appIDs": ["44G72CWWEW.com.DannyRyman.Stepper", "VPDMVVCHY3.com.DannyRyman.Stepper"],
                 "components": [
                     {
                         "/": "/add.html",
