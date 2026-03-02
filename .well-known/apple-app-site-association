@@ -1,0 +1,19 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": ["44G72CWWEW.com.DannyRyman.Stepper"],
+                "components": [
+                    {
+                        "/": "/add.html",
+                        "comment": "Friend invite link with ?code= parameter"
+                    },
+                    {
+                        "/": "/add",
+                        "comment": "Alternate invite path"
+                    }
+                ]
+            }
+        ]
+    }
+}
